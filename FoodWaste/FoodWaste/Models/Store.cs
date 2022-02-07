@@ -41,6 +41,7 @@ string description;
 
 string image; 
 
+public string Image { get; set; }
 }
 
 public class Clearances {
