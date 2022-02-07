@@ -1,4 +1,34 @@
 ﻿<Properties StartupConfiguration="{A522474F-FCD9-4721-AC70-3B098A601643}|Default">
-  <MonoDevelop.Ide.ItemProperties.FoodWaste FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.FoodWaste PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FoodWaste/Properties/launchSettings.json">
+    <Files>
+      <File FileName="FoodWaste/Program.cs" Line="1" Column="1" />
+      <File FileName="FoodWaste/Startup.cs" Line="47" Column="31" />
+      <File FileName="FoodWaste/Controllers/WeatherForecastController.cs" Line="14" Column="4" />
+      <File FileName="FoodWaste/Properties/launchSettings.json" Line="23" Column="25" />
+      <File FileName="FoodWaste/appsettings.json" Line="1" Column="1" />
+      <File FileName="FoodWaste/appsettings.Development.json" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FoodWaste" expanded="True">
+            <Node name="FoodWaste" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True">
+                <Node name="launchSettings.json" selected="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
