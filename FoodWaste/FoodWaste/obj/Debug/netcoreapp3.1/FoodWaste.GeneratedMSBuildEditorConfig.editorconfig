@@ -1,3 +1,7 @@
 is_global = true
 build_property.RootNamespace = FoodWaste
+<<<<<<< HEAD
 build_property.ProjectDir = /Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/
+=======
+build_property.ProjectDir = /home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/
+>>>>>>> 1ba80ea8082de1d73cfdd6b4d38808df64bc1c67
