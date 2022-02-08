@@ -3,60 +3,60 @@ using System.Collections.Generic;
 namespace FoodWaste {
 
 
-public class Store {
+    public class Store {
 
-    public Address address {get; set; }
-    public string brand {get; set; }
+        public Address address {get; set; }
+        public string brand {get; set; }
+        public string name { get; set; }
+        public string id { get; set; }
 
-    public string name { get; set; }
+    }
 
-}
+    public class Address{
+        public string city { get; set; } 
+        public string country { get; set; } 
+        public string street { get; set; }
+        public string zip { get; set; }
 
-public class Address{
-    public string city { get; set; } 
-    public string country { get; set; } 
-    public string street { get; set; }
-    public string zip { get; set; }
+    }
 
-}
+    public class Offer {
 
-public class Offer {
+        public string currency {get; set;}
+        public int discount {get; set;}
 
-    string currency;
-    int discount;
+        public int newPrice {get; set;}
 
-    int newPrice; 
+        public int originalPrice {get; set;}
 
-    int originalPrice;
+        public int percentDiscount {get; set;}
 
-    int percentDiscount;
+        public string startTime {get; set;}
 
-    string startTime; 
+        public string endTime {get; set;}
 
-    string endTime;
+        public int stock {get; set;} 
 
-    int stock; 
+    } 
 
-} 
-
-public class Product {
-
-
-string description;
-
-string image; 
-
-public string Image { get; set; }
-}
-
-public class Clearances {
-
-List<Offer> offerList = new List<Offer>();
-
-List<Product> productList = new List<Product>(); 
-
-}
+    public class Product {
 
 
+        public string description { get; set; }
+        public string image { get; set; }
+
+    }
+    public class Clearances {
+        
+        public Offer offer { get; set;}
+        public Product product {get; set;}
+
+     
+
+    }
+
+    public class foodOffers {
+        public Clearances clearances {get; set;} 
+    }
 }
 
