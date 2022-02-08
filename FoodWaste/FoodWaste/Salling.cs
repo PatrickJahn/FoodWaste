@@ -80,11 +80,15 @@ namespace FoodWasteHTTPCall
 
            private string serializeProducts(string json){
             
-           FoodWaste.Clearances objlist = JsonSerializer.Deserialize<FoodWaste.Clearances >(json)!;
+          List<Object> objlist = JsonSerializer.Deserialize<List<Object>>(json)!;
+            List<FoodWaste.foodWasteDTO>  foodWastedto = new List<FoodWaste.foodWasteDTO>();
+        
+          foreach(Object o in objlist){
 
+              foodWastedto.Add( JsonSerializer.Deserialize<FoodWaste.foodWasteDTO>(o.ToString())!);
 
-           Console.WriteLine(objlist);
-            String jsonOffers = JsonSerializer.Serialize(objlist);
+          }
+            String jsonOffers = JsonSerializer.Serialize(foodWastedto);
 
 
             return jsonOffers;

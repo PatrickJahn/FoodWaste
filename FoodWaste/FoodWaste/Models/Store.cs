@@ -23,19 +23,19 @@ namespace FoodWaste {
     public class Offer {
 
         public string currency {get; set;}
-        public int discount {get; set;}
+        public float discount {get; set;}
 
-        public int newPrice {get; set;}
+        public float newPrice {get; set;}
 
-        public int originalPrice {get; set;}
+        public float originalPrice {get; set;}
 
-        public int percentDiscount {get; set;}
+        public float percentDiscount {get; set;}
 
         public string startTime {get; set;}
 
         public string endTime {get; set;}
 
-        public int stock {get; set;} 
+        public float stock {get; set;} 
 
     } 
 
@@ -48,6 +48,7 @@ namespace FoodWaste {
     }
     public class Clearances {
         
+        
         public Offer offer { get; set;}
         public Product product {get; set;}
 
@@ -55,8 +56,11 @@ namespace FoodWaste {
 
     }
 
-    public class foodOffers {
-        public Clearances clearances {get; set;} 
+    public class foodWasteDTO {
+
+
+        public Store store {get; set;}
+        public List<Clearances> clearances {get; set;} 
     }
 }
 
