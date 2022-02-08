@@ -3,12 +3,15 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+
 
 namespace FoodWasteHTTPCall
 {
     public class Salling
     {
-         private string Token = "Bearer cf09e708-cba9-4d57-9f0b-ff1102610685";
+        private string TOKEN = "cf09e708-cba9-4d57-9f0b-ff1102610685";
         private readonly HttpClient HttpClient;
         public Salling()
         {
@@ -17,20 +20,35 @@ namespace FoodWasteHTTPCall
         }
 
 
-        public  async Task<string> GetProductAsync(string path)
+        public  async Task<string> fetchAllStores()
         {
+            string url = "https://api.sallinggroup.com/v2/stores/";
             try{
-            using (var request = new HttpRequestMessage(HttpMethod.Get, path))
-            {
-                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", "cf09e708-cba9-4d57-9f0b-ff1102610685");
-                var response = await HttpClient.SendAsync(request);
-                var e =  await response.Content.ReadAsStringAsync();
-                return e.ToString();
-            }
+          
+                HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, url);
+                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", TOKEN);
+                
+                HttpResponseMessage response = await HttpClient.SendAsync(request);
+
+                string storeData =  serializeStores(await response.Content.ReadAsStringAsync());
+            
+                return storeData;
+;
+            
             }catch(Exception ex){
                 Console.WriteLine(ex);
-                return "Error";
+                return "Error: Could not retrive store data";
             }
+        }
+
+        public string serializeStores(string json){
+
+            FoodWaste.Store[] storeObj = JsonSerializer.Deserialize<FoodWaste.Store[]>(json)!;
+            String jsonStores = JsonSerializer.Serialize(storeObj);
+
+            Console.WriteLine(jsonStores);
+
+            return jsonStores;
         }
     }
 }

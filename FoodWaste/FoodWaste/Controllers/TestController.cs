@@ -9,27 +9,33 @@ using Microsoft.Extensions.Logging;
 namespace FoodWaste.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/")]
     public class TestController : ControllerBase
     {
    
         private readonly ILogger<TestController> _logger;
+        private FoodWasteHTTPCall.Salling salling = new FoodWasteHTTPCall.Salling();
 
         public TestController(ILogger<TestController> logger)
         {
             _logger = logger;
         }
 
-       
-
-        [HttpGet]
-        public String GetTest()
+         [HttpGet]
+        public String GetDefault()
         {
-            var salling = new FoodWasteHTTPCall.Salling();
-            var e = salling.GetProductAsync("https://api.sallinggroup.com/v2/stores/");
+    
+
+            return "Welcome to foodwaste API ";
+        }
       
-            // Serialize
-            return "Welcome to foodwaste API " + e;
+
+        [HttpGet("stores")]
+        public async Task<String> GetTest()
+        {
+           
+    
+               return await salling.fetchAllStores();
         }
       
     }

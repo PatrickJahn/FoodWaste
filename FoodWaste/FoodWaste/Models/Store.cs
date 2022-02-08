@@ -5,13 +5,18 @@ namespace FoodWaste {
 
 public class Store {
 
-    string address; 
-    string city; 
-    string country; 
-    string street;
-    int zip; 
-    string brand;
-    string name; 
+    public Address address {get; set; }
+    public string brand {get; set; }
+
+    public string name { get; set; }
+
+}
+
+public class Address{
+    public string city { get; set; } 
+    public string country { get; set; } 
+    public string street { get; set; }
+    public string zip { get; set; }
 
 }
 
