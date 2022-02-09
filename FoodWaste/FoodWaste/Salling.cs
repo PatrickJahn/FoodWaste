@@ -20,9 +20,9 @@ namespace FoodWasteHTTPCall
         }
 
 
-        public  async Task<string> fetchAllStores()
+        public  async Task<string> fetchAllStores(string kind = null)
         {
-            string url = "https://api.sallinggroup.com/v2/stores/";
+            string url = kind == null ? "https://api.sallinggroup.com/v2/stores/" : "https://api.sallinggroup.com/v2/stores/?brand=" + kind;
             try{
             
                     HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, url);
@@ -37,6 +37,7 @@ namespace FoodWasteHTTPCall
                     return "{\"error\": \"Could not retrive store data\"}";
             }
         }
+
 
         private string serializeStores(string json){
 

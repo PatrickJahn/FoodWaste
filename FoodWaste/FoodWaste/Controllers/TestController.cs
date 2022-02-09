@@ -40,6 +40,13 @@ namespace FoodWaste.Controllers
                return await salling.fetchAllStores();
         }
 
+        [HttpGet("stores/{kind}")]
+        public async Task<String> GetStoresKind(string kind)
+        {
+           
+               return await salling.fetchAllStores(kind);
+        }
+
 
            [HttpGet("offers")]
         public async Task<String> GetOffers()
