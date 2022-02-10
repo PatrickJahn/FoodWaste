@@ -10,6 +10,7 @@ namespace FoodWaste {
         public string name { get; set; }
         public string id { get; set; }
 
+        public Hours[] hours {get; set;}
     }
 
     public class Address{
@@ -61,6 +62,15 @@ namespace FoodWaste {
 
         public Store store {get; set;}
         public List<Clearances> clearances {get; set;} 
+    }
+
+
+    public class Hours {
+        public string close {get;set;}
+        public string open {get;set;}
+        public bool closed {get;set;}
+        public float[] customerFlow {get;set;}
+    
     }
 }
 
