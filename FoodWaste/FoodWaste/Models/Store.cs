@@ -62,5 +62,24 @@ namespace FoodWaste {
         public Store store {get; set;}
         public List<Clearances> clearances {get; set;} 
     }
+
+    public class suggestions {
+
+       public string title {get; set;} 
+       public string id {get; set;} 
+       public string  prod_id {get; set;} 
+       public double price {get; set;} 
+       public string description {get; set;} 
+       public string link {get; set;} 
+       public string img {get; set;} 
+
+
+    }
+
+    public class searchItemList {
+
+         List<suggestions> suggestions {get; set;}
+    }
 }
+
 

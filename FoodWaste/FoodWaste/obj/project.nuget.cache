@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "99XiEZZatotkE6Z6cxYsCKoXhvyecw9Cj/rHhgxUbhgp6n6RFV1r80+ARNvnKWscWEDa194wrccTaUCRJTNbPA==",
+  "dgSpecHash": "o0xXc3/kHjHv3uNGOZQVx/0hD0hmWzZldETX8BpMKjRo5UGqwCF46/YHf7kuUqGbGW5LzhKa556iKJOfnXWHJQ==",
   "success": true,
-  "projectFilePath": "/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/FoodWaste.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/FoodWaste.csproj",
+  "expectedPackageFiles": [
+    "/home/dr3adp1rat3r0b3rts/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "/home/dr3adp1rat3r0b3rts/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/home/dr3adp1rat3r0b3rts/.nuget/packages/microsoft.netcore.app.host.linux-x64/3.1.22/microsoft.netcore.app.host.linux-x64.3.1.22.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/FoodWaste.csproj": {}
+    "/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/FoodWaste.csproj": {}
   },
   "projects": {
-    "/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/FoodWaste.csproj": {
+    "/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/FoodWaste.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/FoodWaste.csproj",
+        "projectUniqueName": "/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/FoodWaste.csproj",
         "projectName": "FoodWaste",
-        "projectPath": "/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/FoodWaste.csproj",
-        "packagesPath": "/Users/Patrick/.nuget/packages/",
-        "outputPath": "/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/",
+        "projectPath": "/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/FoodWaste.csproj",
+        "packagesPath": "/home/dr3adp1rat3r0b3rts/.nuget/packages/",
+        "outputPath": "/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/Patrick/.nuget/NuGet/NuGet.Config"
+          "/home/dr3adp1rat3r0b3rts/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -47,6 +47,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[3.1.22, 3.1.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -55,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }

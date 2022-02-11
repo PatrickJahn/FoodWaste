@@ -46,6 +46,13 @@ namespace FoodWasteHTTPCall
             return jsonStores;
         }
 
+               private string serializeSearchItem(string json){
+                    Console.WriteLine(json); 
+            FoodWaste.searchItemList searchItemsObj = JsonSerializer.Deserialize<FoodWaste.searchItemList>(json)!;
+            String jsonStores = JsonSerializer.Serialize(searchItemsObj);
+            return jsonStores;
+        }
+
 
           public  async Task<string> fetchOffers(String storeId = null, String zip = null)
         {
@@ -101,6 +108,23 @@ namespace FoodWasteHTTPCall
             return jsonOffers;
         }
 
+              public  async Task<string> fetchSearchItem(string searchedItem)
+        {
+            string url = "https://api.sallinggroup.com/v1-beta/product-suggestions/relevant-products?query=" + searchedItem;
+            try{
+            
+                    HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, url);
+                    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", TOKEN);
+                    
+                    HttpResponseMessage response = await HttpClient.SendAsync(request);
+
+                    return await response.Content.ReadAsStringAsync();
+
+            }catch(Exception ex){
+                    Console.WriteLine(ex);
+                    return "{\"error\": \"Could not retrive searched item data\"}";
+            }
+        }
 
 
 
