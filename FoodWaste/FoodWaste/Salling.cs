@@ -34,6 +34,7 @@ namespace FoodWasteHTTPCall
                     return storeData;
     
             }catch(Exception ex){
+                Console.WriteLine(ex);
                     return "{\"error\": \"Could not retrive store data\"}";
             }
         }
