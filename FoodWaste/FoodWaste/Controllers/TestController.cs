@@ -55,11 +55,11 @@ namespace FoodWaste.Controllers
                return await salling.fetchOffers(null, "2300");
         }
 
-               [HttpGet("offerss")]
-        public async Task<String> GetOfferss()
+               [HttpGet("offers/{id}")]
+        public async Task<String> GetOfferss(string id)
         {
            
-               return await salling.fetchOffers("efba0457-090e-4132-81ba-c72b4c8e7fee", null);
+               return await salling.fetchOffers(id, null);
         }
       
       

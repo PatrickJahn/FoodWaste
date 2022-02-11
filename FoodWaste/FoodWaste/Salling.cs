@@ -97,7 +97,7 @@ namespace FoodWasteHTTPCall
         }
            private string serializeProduct(string json){
 
-            FoodWaste.Clearances storeObj = JsonSerializer.Deserialize<FoodWaste.Clearances>(json)!;
+            FoodWaste.foodWasteDTO storeObj = JsonSerializer.Deserialize<FoodWaste.foodWasteDTO>(json)!;
             String jsonOffers = JsonSerializer.Serialize(storeObj);
             return jsonOffers;
         }
