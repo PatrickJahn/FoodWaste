@@ -48,20 +48,22 @@ namespace FoodWaste.Controllers
         }
 
 
-           [HttpGet("offers")]
-        public async Task<String> GetOffers()
-        {
-           
-               return await salling.fetchOffers(null, "2300");
-        }
 
+<<<<<<< HEAD
                [HttpGet("offers/{id}")]
         public async Task<String> GetOfferss(string id)
         {
            
                return await salling.fetchOffers(id, null);
+=======
+      
+        [HttpGet("search/{kind}")]
+        public async Task<String> GetSearchItem(string kind)
+        {
+           
+               return await salling.fetchSearchItem(kind);
+>>>>>>> cc22251fc332a4b25d5605a4f9a5c7c30a6bb562
         }
-      
-      
+
     }
 }
