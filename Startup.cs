@@ -10,7 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-
+using Microsoft.OpenApi.Models;
+using System.Reflection;
+using System.IO;
 namespace FoodWaste
 {
     public class Startup
@@ -27,6 +29,22 @@ namespace FoodWaste
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+           services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Foodwaste API",
+                    Description = "An ASP.NET Core Web API for foodwaste items",
+            
+                   
+                });
+
+                var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+            });
+
+
             services.AddCors(options => {
                 options.AddDefaultPolicy(
                                     builder =>{
@@ -41,6 +59,8 @@ namespace FoodWaste
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI();
             }
         
         

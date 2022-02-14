@@ -13,6 +13,7 @@ namespace FoodWaste.Controllers
 
     [ApiController]
     [Route("api/")]
+    [Produces("application/json")]
     public class ApiController : ControllerBase
     {
    
@@ -32,6 +33,13 @@ namespace FoodWaste.Controllers
         }
       
 
+
+       /// <summary>
+       /// Returns all stores 
+       /// </summary>
+        /// <remarks>
+        /// Here is a sample remarks placeholder.
+        /// </remarks>
         [HttpGet("stores")]
         public async Task<String> GetTest()
         {
@@ -39,7 +47,10 @@ namespace FoodWaste.Controllers
                return await salling.fetchAllStores();
         }
 
-
+       /// <summary>
+       /// Returns all stores by kind
+       /// </summary>
+        /// <param name="kind">The type of the desired store </param>
         [HttpGet("stores/{kind}")]
         public async Task<String> GetStoresKind(string kind)
         {
@@ -49,7 +60,9 @@ namespace FoodWaste.Controllers
 
 
 
-
+       /// <summary>
+       /// Returns all offers by id
+       /// </summary>
        [HttpGet("offers/{id}")]
         public async Task<String> GetOfferss(string id)
         {
