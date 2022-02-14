@@ -28,7 +28,6 @@ namespace FoodWaste.Controllers
         public String GetDefault()
         {
     
-
             return "Welcome to foodwaste API ";
         }
       
@@ -50,14 +49,13 @@ namespace FoodWaste.Controllers
 
 
 
-        [HttpGet("offers/{id}")]
+
+       [HttpGet("offers/{id}")]
         public async Task<String> GetOfferss(string id)
         {
            
                return await salling.fetchOffers(id, null);
-
         }
-
 
 
 
@@ -69,8 +67,8 @@ namespace FoodWaste.Controllers
 
         }
 
-      
-        [HttpGet("search/{kind}")]
+
+        [HttpGet("search/{kind}")] 
         public async Task<String> GetSearchItem(string kind)
         {
            
