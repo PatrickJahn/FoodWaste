@@ -1,3 +1,33 @@
+<<<<<<< HEAD
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/bin/Debug/netcoreapp3.1/appsettings.json
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/bin/Debug/netcoreapp3.1/FoodWaste
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/bin/Debug/netcoreapp3.1/FoodWaste.deps.json
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/bin/Debug/netcoreapp3.1/FoodWaste.runtimeconfig.json
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/bin/Debug/netcoreapp3.1/FoodWaste.runtimeconfig.dev.json
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/bin/Debug/netcoreapp3.1/FoodWaste.dll
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/bin/Debug/netcoreapp3.1/FoodWaste.pdb
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.csproj.AssemblyReference.cache
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.GeneratedMSBuildEditorConfig.editorconfig
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.AssemblyInfoInputs.cache
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.AssemblyInfo.cs
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.csproj.CoreCompileInputs.cache
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.MvcApplicationPartsAssemblyInfo.cache
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/staticwebassets/FoodWaste.StaticWebAssets.Manifest.cache
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.RazorTargetAssemblyInfo.cache
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.dll
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.pdb
+/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.genruntimeconfig.cache
+/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.csproj.AssemblyReference.cache
+/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.AssemblyInfoInputs.cache
+/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.AssemblyInfo.cs
+/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.csproj.CoreCompileInputs.cache
+/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.MvcApplicationPartsAssemblyInfo.cache
+/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.dll
+/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.pdb
+=======
+>>>>>>> main
 /Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/bin/Debug/netcoreapp3.1/appsettings.json
 /Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/bin/Debug/netcoreapp3.1/FoodWaste.deps.json
@@ -5,6 +35,12 @@
 /Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/bin/Debug/netcoreapp3.1/FoodWaste.runtimeconfig.dev.json
 /Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/bin/Debug/netcoreapp3.1/FoodWaste.dll
 /Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/bin/Debug/netcoreapp3.1/FoodWaste.pdb
+<<<<<<< HEAD
+/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/staticwebassets/FoodWaste.StaticWebAssets.Manifest.cache
+/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.RazorTargetAssemblyInfo.cache
+/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.genruntimeconfig.cache
+/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/bin/Debug/netcoreapp3.1/FoodWaste
+=======
 /Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.csproj.AssemblyReference.cache
 /Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.GeneratedMSBuildEditorConfig.editorconfig
 /Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.AssemblyInfoInputs.cache
@@ -16,3 +52,4 @@
 /Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.dll
 /Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.pdb
 /Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/Debug/netcoreapp3.1/FoodWaste.genruntimeconfig.cache
+>>>>>>> main

@@ -20,7 +20,7 @@
       "outputPath": "/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/Patrick/.config/NuGet/NuGet.Config"
+        "/Users/Patrick/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

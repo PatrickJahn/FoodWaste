@@ -15,6 +15,9 @@
   },
   "ProjectWorkspaceState": {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
     "TagHelpers": [
       {
         "HashCode": -206436381,
@@ -14402,9 +14405,12 @@
         }
       }
     ],
+<<<<<<< HEAD
+=======
 =======
     "TagHelpers": [],
 >>>>>>> 1ba80ea8082de1d73cfdd6b4d38808df64bc1c67
+>>>>>>> main
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "FoodWaste",
