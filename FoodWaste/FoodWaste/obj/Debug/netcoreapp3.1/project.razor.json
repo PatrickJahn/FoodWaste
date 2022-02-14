@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
+  "FilePath": "/Users/Patrick/Desktop/FoodWaste/FoodWaste/FoodWaste/FoodWaste/FoodWaste.csproj",
+=======
   "FilePath": "/home/dr3adp1rat3r0b3rts/FoodWaste/FoodWaste/FoodWaste/FoodWaste.csproj",
+>>>>>>> 1ba80ea8082de1d73cfdd6b4d38808df64bc1c67
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -10,6 +14,10 @@
     ]
   },
   "ProjectWorkspaceState": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
     "TagHelpers": [
       {
         "HashCode": -206436381,
@@ -14397,6 +14405,12 @@
         }
       }
     ],
+<<<<<<< HEAD
+=======
+=======
+    "TagHelpers": [],
+>>>>>>> 1ba80ea8082de1d73cfdd6b4d38808df64bc1c67
+>>>>>>> main
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "FoodWaste",

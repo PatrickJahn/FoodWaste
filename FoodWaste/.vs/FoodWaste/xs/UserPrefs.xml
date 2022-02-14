@@ -1,5 +1,6 @@
 ﻿<Properties StartupConfiguration="{A522474F-FCD9-4721-AC70-3B098A601643}|Default">
   <MonoDevelop.Ide.ItemProperties.FoodWaste PreferredExecutionTarget="/Applications/Safari.app" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="FoodWaste/Salling.cs">
     <Files>
       <File FileName="FoodWaste/Controllers/WeatherForecastController.cs" Line="28" Column="53" />
@@ -8,6 +9,12 @@
       <File FileName="FoodWaste/appsettings.json" Line="1" Column="1" />
       <File FileName="FoodWaste/Properties/launchSettings.json" Line="23" Column="25" />
       <File FileName="FoodWaste/Startup.cs" Line="1" Column="1" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="FoodWaste/Controllers/TestController.cs">
+    <Files>
+      <File FileName="FoodWaste/Controllers/WeatherForecastController.cs" Line="8" Column="32" />
+      <File FileName="FoodWaste/appsettings.json" Line="1" Column="1" />
+>>>>>>> main
       <File FileName="FoodWaste/appsettings.Development.json" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -15,10 +22,18 @@
         <State name="__root__">
           <Node name="FoodWaste" expanded="True">
             <Node name="FoodWaste" expanded="True">
+<<<<<<< HEAD
               <Node name="Controllers" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
               <Node name="Salling.cs" selected="True" />
+=======
+              <Node name="Controllers" expanded="True">
+                <Node name="TestController.cs" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+>>>>>>> main
             </Node>
           </Node>
         </State>
