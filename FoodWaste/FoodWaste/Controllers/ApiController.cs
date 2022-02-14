@@ -13,18 +13,18 @@ namespace FoodWaste.Controllers
 
     [ApiController]
     [Route("api/")]
-    public class TestController : ControllerBase
+    public class ApiController : ControllerBase
     {
    
-        private readonly ILogger<TestController> _logger;
+        private readonly ILogger<ApiController> _logger;
         private FoodWasteHTTPCall.Salling salling = new FoodWasteHTTPCall.Salling();
 
-        public TestController(ILogger<TestController> logger)
+        public ApiController(ILogger<ApiController> logger)
         {
             _logger = logger;
         }
 
-         [HttpGet]
+       [HttpGet]
         public String GetDefault()
         {
     
@@ -40,6 +40,7 @@ namespace FoodWaste.Controllers
                return await salling.fetchAllStores();
         }
 
+
         [HttpGet("stores/{kind}")]
         public async Task<String> GetStoresKind(string kind)
         {
@@ -49,20 +50,31 @@ namespace FoodWaste.Controllers
 
 
 
-<<<<<<< HEAD
-               [HttpGet("offers/{id}")]
+        [HttpGet("offers/{id}")]
         public async Task<String> GetOfferss(string id)
         {
            
                return await salling.fetchOffers(id, null);
-=======
+
+        }
+
+
+
+
+        [HttpGet("offersbyzip/{zip}")]
+        public async Task<String> GetOffers(string zip)
+        {
+           
+               return await salling.fetchOffers(null, zip);
+
+        }
+
       
         [HttpGet("search/{kind}")]
         public async Task<String> GetSearchItem(string kind)
         {
            
                return await salling.fetchSearchItem(kind);
->>>>>>> cc22251fc332a4b25d5605a4f9a5c7c30a6bb562
         }
 
     }
