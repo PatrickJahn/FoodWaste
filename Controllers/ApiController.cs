@@ -13,7 +13,6 @@ namespace FoodWaste.Controllers
 
     [ApiController]
     [Route("api/")]
-    [Produces("application/json")]
     public class ApiController : ControllerBase
     {
    
