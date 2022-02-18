@@ -66,7 +66,9 @@ namespace FoodWaste
 
             }
  
-        
+          app.UseSwagger();
+                 app.UseSwaggerUI();
+
            app.UseCors();
 
             app.UseHttpsRedirection();

@@ -24,6 +24,10 @@ namespace FoodWaste.Controllers
             _logger = logger;
         }
 
+
+       /// <summary>
+       /// Returns a welcome message
+       /// </summary>
        [HttpGet]
         public String GetDefault()
         {
@@ -49,7 +53,7 @@ namespace FoodWaste.Controllers
        /// <summary>
        /// Returns all stores by kind
        /// </summary>
-        /// <param name="kind">The type of the desired store </param>
+        /// <param name="kind">The type of the desired store (Bilka, netto...)</param>
         [HttpGet("stores/{kind}")]
         public async Task<String> GetStoresKind(string kind)
         {
@@ -60,8 +64,10 @@ namespace FoodWaste.Controllers
 
 
        /// <summary>
-       /// Returns all offers by id
+       /// Returns all offers by storeid
        /// </summary>
+       /// <param name="id">The ID for the store you want offers from</param>
+
        [HttpGet("offers/{id}")]
         public async Task<String> GetOfferss(string id)
         {
@@ -70,13 +76,15 @@ namespace FoodWaste.Controllers
         }
 
 
-
+       /// <summary>
+       /// Returns all offers by zip code
+       /// </summary>
+       /// <param name="zip">The zip code for the store you want offers from</param>
         [HttpGet("offersbyzip/{zip}")]
         public async Task<String> GetOffers(string zip)
         {
            
                return await salling.fetchOffers(null, zip);
-
         }
 
 
