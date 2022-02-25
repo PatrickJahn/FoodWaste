@@ -33,14 +33,11 @@ jobs:
         with:
           name: .net-app
           path: ${{env.DOTNET_ROOT}}/myapp
+          
+      - name: Test code
+        run: dotnet test --no-restore --verbosity normal
 
-  test:
-      runs-on: windows-latest
-      needs: build
-      
-      steps:
-        - name: Test code
-          run: dotnet test --verbosity normal
+       
   deploy:
     runs-on: windows-latest
     needs: test
