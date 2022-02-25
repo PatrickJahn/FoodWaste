@@ -40,7 +40,7 @@ jobs:
       
       steps:
         - name: Test code
-          run: dotnet test --no-restore --verbosity normal
+          run: dotnet test --verbosity normal
   deploy:
     runs-on: windows-latest
     needs: test
