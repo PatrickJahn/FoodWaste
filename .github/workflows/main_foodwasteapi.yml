@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-and-test:
     runs-on: windows-latest
 
     steps:
@@ -40,7 +40,7 @@ jobs:
        
   deploy:
     runs-on: windows-latest
-    needs: build
+    needs: build-and-test
     environment:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
