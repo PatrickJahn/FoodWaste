@@ -57,6 +57,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'Domea-Identity'
-          slot-name: 'Develop'
+          slot-name: 'development'
           publish-profile: ${{ secrets.XXXX }}
           package: .
