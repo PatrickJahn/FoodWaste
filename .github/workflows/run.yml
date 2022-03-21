@@ -10,6 +10,7 @@ on:
   workflow_dispatch:
   
 env:
+  AZURE_WEBAPP_NAME: Domea-Identity  
   DOTNET_VERSION: '5.0.x'   
 
 jobs:
@@ -26,10 +27,10 @@ jobs:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Build with dotnet
-        run: dotnet build --configuration Develop
+        run: dotnet build --configuration Development
 
       - name: dotnet publish
-        run: dotnet publish -c Develop -o ${{env.DOTNET_ROOT}}/domea-identity
+        run: dotnet publish -c Development -o ${{env.DOTNET_ROOT}}/domea-identity
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -43,7 +44,7 @@ jobs:
     runs-on: windows-latest
     needs: build
     environment:
-      name: 'Develop'
+      name: 'Development'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -56,7 +57,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'Domea-Identity'
+          app-name:  ${{ env.AZURE_WEBAPP_NAME }}
           slot-name: 'development'
           publish-profile: ${{ secrets.XXXX }}
           package: .
